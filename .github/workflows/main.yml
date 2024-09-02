@@ -1,20 +1,7 @@
 name: Docker Build and Publish Docker Image
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - main.py
-      - utils.py
-      - models.py
-      - request.py
-      - Dockerfile
-      - response.py
-      - .dockerignore
-      - requirements.txt
-      - docker-compose.yml
-      - .github/workflows/main.yml
+  workflow_dispatch:
 
 jobs:
   build-and-push:
